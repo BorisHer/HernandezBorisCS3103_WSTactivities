@@ -6,7 +6,9 @@
   
   body {
     font-family: 'Roboto', sans-serif;
-    background: radial-gradient(circle, rgba(43, 89, 153, 0.7), rgba(12, 40, 92, 0.9)); /* Blue gradient */
+    background-image: url('assets/peachbg.jpg'); /* Path to your background image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the background image */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -15,13 +17,13 @@
   }
   
   .page-title {
-    color: #e0e6ed;
+    color: #4a3d3d; /* Darker shade for title */
     font-size: 2.5rem;
     margin-bottom: 20px;
   }
   
   .vision-board-container {
-    background-color: #2a3f5c; /* Lighter blue for the container */
+    background-color: rgba(245, 225, 208, 0.9); /* Semi-transparent background for the container */
     padding: 30px;
     border-radius: 20px;
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
@@ -35,19 +37,19 @@
   }
   
   .reminder {
-    background-color: #3a5679; /* Blue for the reminder section */
+    background-color: rgba(248, 211, 179, 0.9); /* Semi-transparent light peach for the reminder section */
     padding: 15px;
     border-radius: 12px;
   }
   
   .reminder h2 {
-    color: #e0e6ed;
+    color: #4a3d3d;
     margin-bottom: 5px;
   }
   
   .reminder p {
     font-size: 1.2rem; /* Slightly increased font size */
-    color: #b3c4da;
+    color: #6a5a5a; /* Softer text color */
   }
   
   .vision-board {
@@ -63,21 +65,26 @@
     display: flex;
     gap: 15px;
     flex-wrap: wrap;
-    width: 48%;
+    width: 65%; /* Increased space for images */
   }
   
   .image-item {
     width: calc(50% - 7.5px);
-    height: 150px; /* Slightly increased height for better proportions */
-    background-size: cover;
-    background-position: center;
-    border-radius: 10px;
-    border: 2px solid #4f6b89; /* Blue border */
+    height: 150px; /* Fixed height for images */
+    border-radius: 10px; /* Rounded corners */
+    border: 2px solid #d0a59f; /* Softer peach border */
+    overflow: hidden; /* Hide overflow */
+  }
+  
+  .image-item img {
+    width: 100%; /* Make the image fill the container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove bottom space */
   }
   
   .goals-section {
-    width: 48%;
-    background-color: #314e73; /* Blue background for the goals section */
+    width: 30%; /* Made the goals section narrower */
+    background-color: rgba(230, 207, 192, 0.9); /* Softer background for the goals section */
     border-radius: 12px;
     padding: 20px; /* Increased padding */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
@@ -85,7 +92,7 @@
   }
   
   .goals-section h3 {
-    color: #e0e6ed;
+    color: #4a3d3d;
     margin-bottom: 15px; /* Increased margin */
   }
   
@@ -94,13 +101,13 @@
   }
   
   .goals-section li {
-    font-size: 1.1rem;
+    font-size: 1rem; /* Slightly smaller font size */
     margin-bottom: 12px; /* Increased space between goals */
-    color: #b3c4da;
+    color: #6a5a5a; /* Softer text color */
   }
   
   .quote {
-    background-color: #3a5679; /* Blue background for quote */
+    background-color: rgba(248, 211, 179, 0.9); /* Softer peach background for quote */
     width: 100%;
     padding: 20px; /* Increased padding */
     border-radius: 10px;
@@ -108,7 +115,7 @@
     justify-content: center;
     align-items: center;
     font-size: 1.2rem; /* Slightly larger font for the quote */
-    color: #e0e6ed;
+    color: #4a3d3d;
     text-align: center;
     margin-top: 20px;
   }
