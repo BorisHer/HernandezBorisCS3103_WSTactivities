@@ -1,3 +1,10 @@
+:root {
+    --peach-light: #FFDAB9;
+    --peach-medium: #FFDAB9;
+    --peach-dark: #FFB18C;
+    --text-color: #4A4A4A;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -5,19 +12,27 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #333;
+    background-color: var(--peach-dark);
     font-family: Arial, sans-serif;
+    color: var(--text-color);
 }
 
 .container {
-    width: 80%;
+    width: 90%;
     max-width: 600px;
-    text-align: center;
+}
+
+.card {
+    background-color: var(--peach-light);
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
 }
 
 h2 {
-    color: white;
+    color: var(--peach-dark);
     margin-bottom: 20px;
+    text-align: center;
 }
 
 textarea {
@@ -25,22 +40,30 @@ textarea {
     height: 200px;
     padding: 15px;
     margin-bottom: 20px;
-    border: none;
-    border-radius: 5px;
+    border: 2px solid var(--peach-medium);
+    border-radius: 10px;
     resize: vertical;
     font-size: 16px;
     box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: var(--peach-dark);
 }
 
 .counts {
     display: flex;
-    justify-content: space-around;
-    color: white;
+    justify-content: space-between;
     font-size: 18px;
 }
 
 #wordCount, #sentenceCount {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: var(--peach-dark);
+    color: var(--text-color);
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 10px;
+    flex-basis: 33%;
+    text-align: center;
 }
