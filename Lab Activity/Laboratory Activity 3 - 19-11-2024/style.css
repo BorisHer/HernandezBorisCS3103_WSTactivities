@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+}
+
+h2 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    resize: vertical;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.counts {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    font-size: 18px;
+}
+
+#wordCount, #sentenceCount {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
